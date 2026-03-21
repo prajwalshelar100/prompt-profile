@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Prompt Profile",
+    "slug": "prompt-profile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#007AFF"
+    },
+    "description": "Premium AI Context Builder for personalized agent prompts.",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.prajwalshelar.promptprofile",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan product labels and extraction information.",
+        "NSPhotoLibraryUsageDescription": "Allow access to photos to select product images for analysis.",
+        "NSPhotoLibraryAddUsageDescription": "Allow saving analyzed product reports to your photo library."
+      }
+    },
+    "android": {
+      "package": "com.prajwalshelar.promptprofile",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#007AFF"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6109200f-75a7-4210-bb53-16d1cecd2f3e"
+      }
+    }
+  }
+}
